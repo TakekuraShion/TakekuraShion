@@ -38,24 +38,4 @@ int main() {
     }
     
     printf("\n");   //改行
-
-    for(int i = 0; i < loopMax; ++i){   //バブルソート
-        int loop = loopMax - i;
-        int numIn;
-        for(int j = 0; j < loop; ++j){
-            if(number[j] > number[j + 1]){
-                numIn = number[j + 1];  //numのj番目+1を保存
-                number[j + 1] = number[j];  //numのj番目+1にnumのj 番目を代入
-                number[j] = numIn;   //numのj番目に保存した数を代入
-            }
-        }
-        }
-
-
-        for(int i = 0; i < Define::SIZE; i++){
-        printf("num[%d]=%d\n", i, number[i]);
-    }
-
-
-    return 0;
 }
