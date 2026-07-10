@@ -38,4 +38,20 @@ int main() {
     }
     
     printf("\n");   //改行
+
+    for(int i = 0; i < loopMax; ++i){
+        int lowerNum = number[i];
+        for(int j = i; j < Define::SIZE; ++j){  //バブルソートと違い、すべての要素を調べるため
+            if(number[j] < lowerNum){
+                lowerNum = number[j];
+            }
+        }
+        number[i] = lowerNum;
+    }
+
+    for(int i = 0; i < Define::SIZE; i++){
+        printf("num[%d]=%d\n", i, number[i]);
+    }
+
+    return 0;
 }
