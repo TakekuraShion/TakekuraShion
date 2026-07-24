@@ -27,15 +27,40 @@ int main() {
                     break;
                 }
             }
+
         }
         while(isDuplicate);
 
         number[i] = newNum; //チェックをすべて終えたnumをnumのi番目に代入
     }
 
+    printf("ソート前\n");   
+
     for(int i = 0; i < Define::SIZE; i++){ //無造作な数の配列を表示
         printf("num[%d]=%d\n", i, number[i]);
     }
+
+            printf("\n");   //改行
+
+    for (int i = 0; i < loopMax; i++) {
+        int minIndex = i;
+        int minNum = number[i];
+        for (int j = i + 1; j < Define::SIZE; j++) {
+            
+            if (minNum > number[j]) {
+                minIndex = j;
+                minNum = number[minIndex];
+            }
+        }
+
+        number[minIndex] = number[i];
+        number[i] = minNum;
+    }
     
-    printf("\n");   //改行
+
+    printf("ソート後\n");   
+
+    for(int i = 0; i < Define::SIZE; i++){
+        printf("num[%d]=%d\n", i, number[i]);
+    }
 }
