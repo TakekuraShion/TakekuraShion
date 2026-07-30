@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int num =1;
+
+int main(){
+    for(int i = 0; i < 10; i++){
+        printf("%d \n",num);
+        num++;
+    }
+    return 0;
+}
