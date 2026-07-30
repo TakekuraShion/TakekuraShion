@@ -1,10 +1,15 @@
 #include <stdio.h>
 
-int num = 1;
-
 int main(){
-    for(int i = 0; i < 10; i++){
-    printf("%d \n",num);
-    num ++;
-    }
+    int color =  0x2DBE60;
+
+    int R = color & 0xFF0000;
+    int G = color & 0x00FF00; 
+    int B = color & 0x000060;
+
+    R = R >> 16;
+    G = G >> 8;
+    
+    printf("R:%d \nG:%d \nB:%d",R,G,B);
+    return 0;
 }
