@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include "Define.cpp"
 
+
+//選択ソート
+
 int main() {
     srand((unsigned int)time(NULL));
 

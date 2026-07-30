@@ -33,9 +33,19 @@ int main() {
         number[i] = newNum; //チェックをすべて終えたnumをnumのi番目に代入
     }
 
+    printf("ソート前\n");   
+
     for(int i = 0; i < Define::SIZE; i++){ //無造作な数の配列を表示
         printf("num[%d]=%d\n", i, number[i]);
     }
+
+
     
+    
+    printf("ソート後\n");   
+
+    for(int i = 0; i < Define::SIZE; i++){ //無造作な数の配列を表示
+        printf("num[%d]=%d\n", i, number[i]);
+    }
     printf("\n");   //改行
 }

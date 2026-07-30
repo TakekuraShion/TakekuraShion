@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include "Define.cpp"
 
+//バブルソート
+
 int main() {
     srand((unsigned int)time(NULL));
 

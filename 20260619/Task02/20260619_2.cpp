@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include "Define.cpp"
 
+
+
 int main() {
     srand((unsigned int)time(NULL));
 
